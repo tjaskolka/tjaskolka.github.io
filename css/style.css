@@ -22,6 +22,8 @@ header {
     width: 110px;
     height: auto;
     float: right;
+    margin-top: -3em;
+    margin-right: 2em;
 }
 
 main {
@@ -57,7 +59,15 @@ footer a {
     font-size: .8em;
     color:rgba(255, 217, 0, 0.774);
 }
+
 h1 {
     font-size: 3em;
-    
+}
+
+#approval {
+    opacity: 0.5;
+    width: 15em;
+    float:right;
+    margin-top: -12em;
+    margin-right: 8em;
 }
