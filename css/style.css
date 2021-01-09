@@ -4,6 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     line-height: 16px;
+    margin-top: 2em;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     padding: 1em;
     font-family: 'Redressed', cursive;
     color: #c2e7d9;
-    box-shadow: 0 10px 0 0);// rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #terri {
@@ -31,7 +32,7 @@ main {
     background-color: #a6cfd5;
     padding: 1em;
     width: 40%;
-    box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 hr {
@@ -48,7 +49,7 @@ footer {
     padding: 1em;
     color: #c2e7d9;
     text-align: center;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, .2);
 }
 
 footer a {
@@ -66,7 +67,7 @@ h1 {
 
 #approval {
     opacity: 0.5;
-    width: 15em;
+    width: 14em;
     float:right;
     margin-top: -12em;
     margin-right: 8em;
