@@ -1,4 +1,5 @@
+//provide information on document last update
 document.getElementById('lastupdated').textContent = document.lastModified;
 
-const datenow = new Date();
-document.getElementById('currentyear').textContent = datenow.getFullYear();
+//provide current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
