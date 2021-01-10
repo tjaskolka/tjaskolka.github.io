@@ -27,6 +27,12 @@ header {
     margin-right: 2em;
 }
 
+@media screen and (min-width:480px) {
+    #approval img {
+        display: none;
+    }
+}
+
 main {
     margin: 0 auto;
     background-color: #a6cfd5;
