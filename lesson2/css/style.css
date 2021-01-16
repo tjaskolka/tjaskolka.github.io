@@ -44,9 +44,6 @@ main {
     text-align: center;
 }
 
-main section h2 {
-    background-color: fff;
-}
 main section picture {
     display:block;    
 }

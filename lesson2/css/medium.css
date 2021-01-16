@@ -3,6 +3,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    main section:nth-child(3) {
+        
+    }
+
     section p {
         height: 7em;
     }
