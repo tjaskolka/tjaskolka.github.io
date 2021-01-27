@@ -1,0 +1,18 @@
+
+
+
+.navigation {
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display:none;
+}
+
+.responsive {
+    display: block;
+}
