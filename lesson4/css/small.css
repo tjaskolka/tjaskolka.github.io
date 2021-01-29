@@ -1,8 +1,85 @@
+body {
+    background-color: #36512e;
+    color: #0d0221;
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+}
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+header, h1, h2 {
+    margin: 0 auto;
+    background-color: #42281d;
+    padding: 5px 0;
+    font-family: 'Architects Daughter', cursive;
+    color: #9f7833;
+    text-align: center;
+}
+
+h1 {
+    font-size:1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+header img {
+    background-color: #D0CCC4;
+    border-radius: .3em;
+}
+
+nav {
+    background-color:#9F7833;
+    font-family: Verdana, sans-serif;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
 
 .navigation {
     padding: 0;
+    margin: 0;
 }
 
 .navigation li:first-child {
@@ -15,4 +92,14 @@
 
 .responsive {
     display: block;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #42281D;
 }

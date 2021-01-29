@@ -1,3 +1,20 @@
+@media only screen and (min-width: 35em) {
+    nav button {display: none;}
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .8rem 1rem;
+}
+
 .navigation {
     display: flex;
 }
@@ -9,4 +26,14 @@
 .navigation li {
     display: block;
     flex: 1 1 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
 }
