@@ -13,9 +13,9 @@ main {
 header, h1, h2 {
     margin: 0 auto;
     background-color: #42281d;
-    padding: 5px 0;
+    padding: 5px 1em;
     font-family: 'Architects Daughter', cursive;
-    color: #9f7833;
+    color: #c79032;
     text-align: center;
 }
 
@@ -30,17 +30,19 @@ h2 {
 header {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 header img {
-    background-color: #D0CCC4;
+    background-color: #9f7833;
     border-radius: .3em;
 }
 
 nav {
     background-color:#9F7833;
-    font-family: Verdana, sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.3rem;
+    margin: 0 auto;
 }
 
 nav button {
@@ -48,7 +50,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #555;
+    color: #42281d;
 }
 nav ul {
     list-style-type: none;
@@ -71,27 +73,11 @@ nav ul li.active a {
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
 }
 
 nav ul.hide {
     display: none;
-}
-
-.navigation {
-    padding: 0;
-    margin: 0;
-}
-
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-    display:none;
-}
-
-.responsive {
-    display: block;
 }
 
 .clearfix:after {
