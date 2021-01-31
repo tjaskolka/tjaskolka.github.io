@@ -8,6 +8,8 @@ body {
 main {
     max-width: 800px;
     margin: 0 auto;
+    background-color: #d0ccc4;
+    padding: 1em;
 }
 
 header, h1, h2 {
@@ -34,12 +36,12 @@ header {
 }
 
 header img {
-    background-color: #9f7833;
+    background-color: #c79032;
     border-radius: .3em;
 }
 
 nav {
-    background-color:#9F7833;
+    background-color:#c79032;
     font-family: 'Architects Daughter', cursive;
     font-size: 1.3rem;
     margin: 0 auto;
@@ -80,12 +82,18 @@ nav ul.hide {
     display: none;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+main section {
+    border: 1px solid #42281d;
+    padding: 1em;
+    text-align: center;
 }
 
 footer {
-    background-color: #42281D;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #42281d;
+    padding: 1em;
+    color: #ffffff;
+    text-align: center;
+    font-size: .7em;
 }
