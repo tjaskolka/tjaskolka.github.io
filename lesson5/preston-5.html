@@ -19,9 +19,13 @@
 </head>
 <body>
     <header>
-        <picture><img src="images/bear-lake-logo.png" alt="Bear Lake Community Board logo"></picture>
-        <section class="headings"><h1>Bear Lake Community Board</h1>
-    <div>Reporting on Bear Lake happenings since 2021</div> </section>  </header>
+        <div id="announcement">Saturday  &#129374; Preston Pancakes in the Park! &#x1f953; 9:00am Saturday
+            at the city park pavilion. </div>
+            
+                <div id="logo">
+        <picture><img src="images/bear-lake-logo.png" alt="Bear Lake Community Board logo"></picture></div>
+        <div class="headings"><h1>Bear Lake Community Board</h1>
+    <div>Reporting on Bear Lake happenings since 2021</div> </div>  </header>
         <nav>
             <button onclick="togglemenu()">&#9776;</button>
             <ul id="mobileMenu" class="hide"> 
@@ -36,8 +40,25 @@
 
     <main>
 <h2>Preston, Idaho</h2>
-<section class="weather"><h3>Hero w/weather summary</h3></section>
-<section class="forecast"><h3>5 Day forecast</h3></section>
+<div class="hero">
+    <img src="images/prestonhero.jpg" alt="village landscape">
+    <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <p>Label: Value</p>
+        <p>Label: Value</p>
+        <p>Label: Value</p>
+    </section>
+    </div>
+<section class="forecast"><h3>5 Day forecast</h3>
+    <div><img src="images/clear.png" alt="clear weather icon">
+    <span id="day1">Day 1</span></div>
+    <div><img src="images/partlycloudy.png" alt="partly cloudy icon">
+    <span id="day2">Day 2</span></div>
+    <div><img src="images/rain02.png" alt="rainy weather icon">
+    <span id="day3">Day 3</span></div>
+    <span id="day4">Day 4</span>
+    <span id="day5">Day 5</span>
+</section>
 <section class="article"><h3>Article</h3></section>
 <section class="contact"><h3>Contact information</h3></section>
     </main>

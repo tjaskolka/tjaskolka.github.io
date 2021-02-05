@@ -29,11 +29,20 @@ h2 {
     font-size: 1.3em;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#announcement {
+    display: none;
+    grid-area: banner;
+    padding: .5em 0 1em 0;
+    background-color: #c79032;
+    color: #42281d;
+    margin-bottom: .5em;
 }
+
+.headings {
+    grid-area: titles;
+    justify-self: start;
+}
+
 
 header img {
     background-color: #c79032;
@@ -82,10 +91,27 @@ nav ul.hide {
     display: none;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 main section {
     border: 1px solid #42281d;
     padding: 1em;
     text-align: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.weathersummary {
+    background-color: #c79032;
+}
+
+.forecast {
+    display: none;
 }
 
 footer {
@@ -96,4 +122,5 @@ footer {
     color: #ffffff;
     text-align: center;
     font-size: .7em;
+    line-height: 1.7em;
 }
