@@ -116,9 +116,27 @@ main section {
     display: none;
 }
 
-.article {
+p.article {
     text-align: left;
 }
+
+iframe {
+    display: none;
+}
+
+.contact {
+    display: flex;
+    line-height: 1.4em;
+    justify-self: center;
+}
+
+
+img.icon {
+    width: 45px;
+    height: 45px;
+    margin: 1em;
+}
+
 
 footer {
     margin: 0 auto;
