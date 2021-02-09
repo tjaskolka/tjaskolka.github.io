@@ -15,7 +15,7 @@ main {
 header, h1, h2 {
     margin: 0 auto;
     background-color: #42281d;
-    padding: 5px 1em;
+    padding: 10px 0;
     font-family: 'Architects Daughter', cursive;
     color: #c79032;
     text-align: center;
@@ -47,6 +47,7 @@ h2 {
 header img {
     background-color: #c79032;
     border-radius: .3em;
+    margin-right: 1em;
 }
 
 nav {
@@ -113,6 +114,10 @@ main section {
 
 .forecast {
     display: none;
+}
+
+.article {
+    text-align: left;
 }
 
 footer {

@@ -14,11 +14,12 @@ h2 {
 
 header {
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner banner banner banner"
-        "logo titles titles titles";
+        "banner banner banner banner banner"
+        "logo logo titles titles titles";
+    justify-items: center;
 }
 
 #logo {

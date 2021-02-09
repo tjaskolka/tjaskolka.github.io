@@ -52,4 +52,19 @@
         display: flex;
     }
 
+    .article img {
+        float: right;
+        width: 350px;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+img.icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 1em;
+}
+
 }
