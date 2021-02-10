@@ -120,14 +120,10 @@ p.article {
     text-align: left;
 }
 
-iframe {
-    display: none;
-}
-
 .contact {
     display: flex;
     line-height: 1.4em;
-    justify-self: center;
+    justify-content: center;
 }
 
 
@@ -137,6 +133,9 @@ img.icon {
     margin: 1em;
 }
 
+#contactinfo {
+    justify-self: center;
+}
 
 footer {
     margin: 0 auto;
