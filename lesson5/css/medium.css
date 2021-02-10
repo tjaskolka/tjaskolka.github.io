@@ -40,4 +40,9 @@ header {
         border: 1px solid #333;
     }
 
+    
+iframe {
+    display: none;
+}
+
 }

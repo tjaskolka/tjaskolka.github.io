@@ -57,5 +57,9 @@
         width: 350px;
     }
 
+    iframe {
+        display: block;
+    }
+
 
 }
