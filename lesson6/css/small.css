@@ -111,6 +111,7 @@ main section {
 .weathersummary {
   background-color: #c79032;
   font-weight: bold;
+  line-height: .8em;
 }
 
 .forecast {
