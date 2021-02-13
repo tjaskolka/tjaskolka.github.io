@@ -117,9 +117,9 @@ main section {
   display: none;
 }
 
-p.article {
-  text-align: left;
-}
+.article p {
+    text-align: left;
+  }
 
 iframe {
     display: none;
