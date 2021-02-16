@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Week 7 Assignment for WDD 230 Web Development (Brigham Young University Idaho) showing a way to handle multiple images while loading the page quickly"
+    />
+    <meta name="author" content="Terri Jaskolka" />
+
+    <title>Demonstration of Progressive Loading Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" type="text/css" />
+    <link rel="stylesheet" href="css/medium.css" type="text/css" />
+    <link rel="stylesheet" href="css/large.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <h1>Lazyload Gallery</h1>
+    <main>
+      <picture>
+        <img src="images/placeholder300x400.png"
+          data-src="http://placeimg.com/300/400/people"
+          alt="random photo of people"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder300x400.png"
+          data-src="http://placeimg.com/300/400/animals"
+          alt="random photo of animal(s)"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder300x400.png"
+          data-src="http://placeimg.com/300/400/nature"
+          alt="random photo of nature"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder300x400.png"
+          data-src="http://placeimg.com/300/400/tech"
+          alt="random photo of tech"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder300x400.png"
+          data-src="http://placeimg.com/300/400/architecture"
+          alt="random photo of architecture"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder300x400.png"
+        data-src="http://picsum.photos/300/400" alt="random photo" />
+      </picture>
+    </main>
+    <footer>
+      &copy;<span id="currentyear"></span> Bear Lake Community Board |
+      Attributions | Terri Jaskolka<br />
+      <div id="calendarDate">date</div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/lazyload2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Spartan", "Architects Daughter"],
+        },
+      });
+    </script>
+  </body>
+</html>
