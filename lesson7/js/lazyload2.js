@@ -6,10 +6,10 @@ const loadImages = (image) => {
         image.removeAttribute('data-src');
     };
 };
-
+/*
 imagesToLoad.forEach((img) => {
     loadImages(img);
-});
+});*/
 
 if('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
