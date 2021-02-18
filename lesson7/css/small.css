@@ -101,17 +101,17 @@ main {
   align-items: center;
 }
 
-img[data-src] {
-  filter: blur(0.2em);
-}
-
-img {
+.lazyload img {
   width: 300px;
   height: 400px;
   filter: blur(0em);
   transition: filter 0.5s;
 }
 
+
+img[data-src] {
+  filter: blur(0.2em);
+}
 
 
 main section {
