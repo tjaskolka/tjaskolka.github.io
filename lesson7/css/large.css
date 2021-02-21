@@ -57,13 +57,13 @@
     width: 350px;
   }
 
-  main.gallery {
+  .gallery {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:  1fr;
   }
 
-  img
+  
 
   iframe {
     display: block;
