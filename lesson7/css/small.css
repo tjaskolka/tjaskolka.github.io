@@ -176,6 +176,10 @@ main figure:hover {
   transition: transform .8s, box-shadow .8s;
 }
 
+.gallery img {
+  width:100%;
+}
+
 footer {
   margin: 0 auto;
   max-width: 800px;
