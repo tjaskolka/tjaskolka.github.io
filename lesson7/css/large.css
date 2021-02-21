@@ -66,14 +66,25 @@
   }
 
   .gallery {
-    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  
+main figure:hover {
+  transform: perspective(500px) translateZ(20px);
+  box-shadow: 15px 15px 10px rgba(66, 40, 29, .6);
+  transition: transform .8s, box-shadow .8s;
+}
+
+
+
   figcaption {
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
-    padding: .5em 0;
+    padding: .8em 0;
   }
 
   iframe {

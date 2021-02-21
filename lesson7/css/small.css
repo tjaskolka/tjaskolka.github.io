@@ -169,16 +169,17 @@ main figure {
   margin: 1em 1em;
   box-shadow: 10px 10px 5px #42281d;
 }
-
-main figure:hover {
-  transform: perspective(500px) translateZ(20px);
-  box-shadow: 15px 15px 10px rgba(66, 40, 29, .6);
-  transition: transform .8s, box-shadow .8s;
-}
-
 .gallery img {
   width:100%;
 }
+
+figcaption {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  text-align: center;
+  padding: .4em 0;
+}
+
 
 footer {
   margin: 0 auto;
