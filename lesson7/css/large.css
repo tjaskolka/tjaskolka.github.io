@@ -33,7 +33,7 @@
     border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
 
-  main {
+  main.gallerypage {
     max-width: 1000px;
   }
 
