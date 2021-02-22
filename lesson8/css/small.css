@@ -1,0 +1,198 @@
+body {
+  background-color: #36512e;
+  color: #0d0221;
+  font-family: Spartan, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #d0ccc4;
+  padding: 1em;
+}
+
+header,
+h1,
+h2 {
+  margin: 0 auto;
+  background-color: #42281d;
+  padding: 10px 0;
+  font-family: "Architects Daughter", cursive;
+  color: #c79032;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+#announcement {
+  display: none;
+  grid-area: banner;
+  padding: 0.5em 0 1em 0;
+  background-color: #c79032;
+  color: #42281d;
+  margin-bottom: 0.5em;
+}
+
+.headings {
+  grid-area: titles;
+  justify-self: start;
+}
+
+header img {
+  background-color: #c79032;
+  border-radius: 0.3em;
+  margin-right: 1em;
+}
+
+nav {
+  background-color: #c79032;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #42281d;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lazyload img {
+  width: 300px;
+  height: 400px;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+
+main section {
+  border: 1px solid #42281d;
+  padding: 1em;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.weathersummary {
+  background-color: #c79032;
+  font-weight: bold;
+  line-height: .8em;
+}
+
+.forecast {
+  display: none;
+}
+
+.article p {
+    text-align: left;
+  }
+
+iframe {
+    display: none;
+}
+
+.contact {
+  display: flex;
+  line-height: 1.4em;
+  justify-content: center;
+}
+
+.article img {
+    width: 100%;
+    object-fit: contain;
+}
+
+img.icon {
+  width: 45px;
+  height: 45px;
+  margin: 1em;
+}
+
+#contactinfo {
+  justify-self: center;
+}
+
+main figure {
+  border: 1px solid #333;
+  background-color: #ddd;
+  margin: 1em 1em;
+  box-shadow: 10px 10px 5px #42281d;
+}
+
+div.gallerytitle {
+  max-width: 1000px;
+}
+
+.gallery img {
+  width:100%;
+}
+
+figcaption {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  text-align: center;
+  padding: .4em 0;
+}
+
+
+footer {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #42281d;
+  padding: 1em;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 1.7em;
+}
