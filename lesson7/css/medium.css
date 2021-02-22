@@ -28,6 +28,10 @@ header {
     justify-self: end;
 }
 
+main {
+    max-width: 800px;
+}
+
     .hero {
         position: relative;
     }
