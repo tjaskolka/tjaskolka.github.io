@@ -50,16 +50,24 @@
                 <legend>Who is reporting?</legend>
                 <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="username@email.com"></label>
-                <label class="top">Telephone*<input type="url" name="url" placeholder="http://" required></label>
+                <label class="top">Telephone*<input type="tel" name="phone" required></label>
                 <label class="top">Zip code*<input type="number" name="zip" required></label>
             </fieldset>
             <fieldset>
                 <legend>About the storm...</legend>
-                <label class="sbs">Storm date<input type="date"></label>
-                <label class="sbs">Storm type<input type="datalist">
-                <option value="">Select one &#9662;</option>
-                <option value="flood">Flash flood</option>
+                <label class="top">Storm date<input type="date" name="date"></label>
+                <label class="top">Storm type<input type="text" name="type" list="stormType">
+                    <datalist id="stormType">
+                <option value="">
+                <option value="Flash flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunder">
+                <option value="Tornado">
+                </datalist>
                 </input>
+                <label class="top">Storm severity<input type="range" name="severity" min="1" max="10">
+                <output for="severity" onforminput="value = severity.valueAsNumber;"></output></label>
             </label>
             </fieldset>
             
