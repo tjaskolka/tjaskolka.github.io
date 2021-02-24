@@ -94,4 +94,9 @@ main figure:hover {
   footer{
     max-width: 1000px;
   }
+
+  
+form label.sbs {
+  padding: .4rem 0;
+}
 }
