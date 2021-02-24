@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Reporting Center for Southeastern Idaho area</title>
+    <!--link
+      href="https://fonts.googleapis.com/css2?family=Spartan&family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    /-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" type="text/css" />
+    <link rel="stylesheet" href="css/medium.css" type="text/css" />
+    <link rel="stylesheet" href="css/large.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+
+      <div id="logo">
+        <picture
+          ><img
+            src="images/bear-lake-logo.png"
+            alt="Bear Lake Community Board logo"
+        /></picture>
+      </div>
+      <div class="headings">
+        <h1>Bear Lake Community Board</h1>
+        <div>Reporting on Bear Lake happenings since 2021</div>
+      </div>
+    </header>
+    <nav>
+      <button onclick="togglemenu()">&#9776;</button>
+      <ul id="mobileMenu" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-8.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="gallery-8.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h2>Storm Reporting Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Who is reporting?</legend>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="username@email.com"></label>
+                <label class="top">Telephone*<input type="url" name="url" placeholder="http://" required></label>
+                <label class="top">Zip code*<input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>About the storm...</legend>
+                <label class="sbs">Storm date<input type="date"></label>
+                <label class="sbs">Storm type<input type="datalist">
+                <option value="">Select one &#9662;</option>
+                <option value="flood">Flash flood</option>
+                </input>
+            </label>
+            </fieldset>
+            
+        <footer>
+            &copy;<span id="currentyear"></span> Bear Lake Community Board |
+            Attributions | Terri Jaskolka<br />
+            <div id="calendarDate">date</div>
+          </footer>
+          <script src="js/menu.js"></script>
+          <script src="js/currentdate.js"></script>
+          <script src="js/weekdays.js"></script>
+          <script src="js/windchill.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>WebFont.load({
+              google: {
+                families: [
+                   'Spartan', 'Architects Daughter'
+                ]
+              }
+            });</script>
+        </body>
+      </html>
+      
