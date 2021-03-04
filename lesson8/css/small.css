@@ -56,7 +56,7 @@ header img {
   margin-right: 1em;
 }
 
-nav {
+.button, nav {
   background-color: #c79032;
   font-family: "Architects Daughter", cursive;
   font-size: 1.3rem;
@@ -76,7 +76,7 @@ nav ul {
   margin: 0;
 }
 
-nav ul li a {
+.button, nav ul li a {
   display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
