@@ -15,12 +15,11 @@ h1, h2 {
 }
 
 main {
-    maxwidth: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .cards {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 2em;
