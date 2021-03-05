@@ -1,0 +1,41 @@
+body {
+    background-color: #8bb080;
+    color: #0d0221;
+    font-family: Caveat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+h1, h2 {
+    font-family: Acme, sans-serif;
+    margin: .6em 0;
+    text-align: center;
+}
+
+main {
+    maxwidth: 1000px;
+    margin: 0 auto;
+}
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 2em;
+}
+
+.cards section{
+    padding: .8em;
+    background-color: bisque;
+    box-shadow: 4px 8px 4px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: .4em 0;
+}
