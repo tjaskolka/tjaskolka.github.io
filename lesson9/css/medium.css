@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 600px) {
 
     nav ul li a {
         padding: .6rem 1rem;
@@ -53,5 +53,26 @@ main {
 iframe {
     display: none;
 }
+
+.towns {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.towns div {
+    flex: 1 1;
+}
+
+.towns section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.towns section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
 
 }

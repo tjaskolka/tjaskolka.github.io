@@ -44,7 +44,7 @@
     border: 1px solid #333;
   }
 
-  .weathersummary {
+  .weathersummary, .calendar {
     position: absolute;
     top: 2em;
     left: 2em;
@@ -99,4 +99,21 @@ main figure:hover {
 form label.sbs {
   padding: .4rem 0;
 }
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.towns section {
+  display: block;
+  
+}
+
+.towns img {
+  width: 100%;
+  height: 151px;
+  object-fit: cover;
+}
+
 }
