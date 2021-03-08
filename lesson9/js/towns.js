@@ -7,7 +7,7 @@ function createCard(towns, townname) {
       let card = document.createElement('section');
       
       let h2 = document.createElement('h2');
-      let motto = document.createElement('h3');
+      let motto = document.createElement('h4');
       let founded = document.createElement('p');
       let population = document.createElement('p');
       let rainfall = document.createElement('p');
