@@ -1,0 +1,78 @@
+@media only screen and (min-width: 600px) {
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "banner banner banner banner banner"
+        "logo logo titles titles titles";
+    justify-items: center;
+}
+
+#logo {
+    grid-area: logo;
+    display:inline;
+    justify-self: end;
+}
+
+main {
+    max-width: 800px;
+}
+
+    .hero {
+        position: relative;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .forecast > span {
+        border: 1px solid #333;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+       
+    
+iframe {
+    display: none;
+}
+
+.towns {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.towns div {
+    flex: 1 1;
+}
+
+.towns section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.towns section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+
+}
