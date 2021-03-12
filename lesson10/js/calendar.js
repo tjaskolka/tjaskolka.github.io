@@ -9,17 +9,17 @@ fetch(requestFile)
 
   const calendar = jsonObject['events'];
 
- // const events = calendar.filter(d => d.date.valueOf() >= new Date().valueOf());
-
-console.log(calendar);
-
 for (let i = 0; i < 5; i++) {
-  if (calendar.date.valueOf() >= new Date().valueOf()) {
-    
-    window['p'+i] = document.createElement('p');
-    
+  let date = new Date(calendar[i].date)
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  if (date >= new Date()) {
+console.log(new Date(calendar[i].date).getDate() + ' ' +
+      months[new Date(calendar[i].date).getMonth()] + ': ' + calendar[i].event);
   }
+ // console.log(events);
 };
+
+
 /*
   calendar.forEach(event =>  {
       let p1 = document.createElement('p');

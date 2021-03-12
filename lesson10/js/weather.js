@@ -6,7 +6,7 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        let temp = Math.round((1.8*(jsObject.main.temp - 273) + 32)*10/10);
+        const temp = Math.round((1.8*(jsObject.main.temp - 273) + 32)*10/10);
         document.getElementById('temp').textContent = temp;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
         document.getElementById('current').textContent = jsObject.weather[0].main;
