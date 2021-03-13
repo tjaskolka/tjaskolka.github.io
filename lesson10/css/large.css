@@ -52,10 +52,6 @@
     box-shadow: 0 0 30px 0 #333;
   }
 
-  .forecast {
-    display: flex;
-  }
-
   .article img {
     float: right;
     width: 350px;
