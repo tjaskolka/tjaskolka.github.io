@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Reporting Center for Southeastern Idaho area</title>
+    <!--link
+      href="https://fonts.googleapis.com/css2?family=Spartan&family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    /-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" type="text/css" />
+    <link rel="stylesheet" href="css/medium.css" type="text/css" />
+    <link rel="stylesheet" href="css/large.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+
+      <div id="logo">
+        <picture
+          ><img
+            src="images/bear-lake-logo.png"
+            alt="Bear Lake Community Board logo"
+        /></picture>
+      </div>
+      <div class="headings">
+        <h1>Bear Lake Community Board</h1>
+        <div>Reporting on Bear Lake happenings since 2021</div>
+      </div>
+    </header>
+    <nav>
+      <button onclick="togglemenu()">&#9776;</button>
+      <ul id="mobileMenu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h2>Storm Reporting Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Who is reporting?</legend>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z-\.\s]{3,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="username@email.com"></label>
+                <label class="top">Telephone*<input type="tel" name="phone" required></label>
+                <label class="top">Zip code*<input type="number" name="zip" required></label>
+                <p class="report">*Required</p>
+            </fieldset>
+            <fieldset>
+                <legend>About the storm:</legend>
+                <label class="top">Storm date<input type="date" name="date"></label>
+                <label class="top">Storm type<input type="text" name="type" list="stormType">
+                    <datalist id="stormType">
+                <option value="">
+                <option value="Flash flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunder">
+                <option value="Tornado">
+                </datalist>
+                </label>
+                <label for="severity" class="top" id="range">Storm severity</label>
+                    <input type="range" id="severity" name="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <datalist id="tickmarks">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top"><select name="region" id="selectregion">
+                  <option value="" selected disabled>Select Region...</option>
+                  <option value="preston">Preston</option>
+                  <option value="soda-springs">Soda Springs</option>
+                  <option value="fish-haven">Fish Haven</option>
+                </select></label>
+               
+            </fieldset>
+
+            <fieldset>
+              <legend>Other...</legend>
+              <div>User in danger?</div>
+              <label class="sbs radio"><input type="radio" name="danger" value="y"> Yes (Get to safety NOW!)</label>
+              <label class="sbs radio"><input type="radio" name="danger" value="n"> No</label>
+              <label class="sbs radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
+
+              <label class="top">Additional info: <textarea name="comments" rows="3" cols="30" id="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send Storm Report" class="button">
+            </form>
+            </main>
+            
+        <footer>
+            &copy;<span id="currentyear"></span> Bear Lake Community Board |
+            Attributions | Terri Jaskolka<br />
+            <div id="calendarDate">date</div>
+          </footer>
+          <script src="js/menu.js"></script>
+          <script src="js/currentdate.js"></script>
+          <script src="js/rating.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>WebFont.load({
+              google: {
+                families: [
+                   'Spartan', 'Architects Daughter'
+                ]
+              }
+            });</script>
+        </body>
+      </html>
+      
