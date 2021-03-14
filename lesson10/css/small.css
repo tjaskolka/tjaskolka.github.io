@@ -127,6 +127,10 @@ main section {
   text-align: center;
 }
 
+main section.article {
+  border: none;
+}
+
 .hero img {
   max-width: 100%;
   height: auto;

@@ -37,13 +37,57 @@ main {
     }
 
     .forecast {
-        display: block;
+        display: grid;
+        grid-template:
+          'header header header header header'
+          'day1 day2 day3 day4 day5';
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .forecast > span {
+    .forecast h2 {
+        grid-area: header;
+    }
+
+    .forecast#day1 {
+        grid-area: day1;
+    }
+
+    .forecast#day2 {
+        grid-area: day2;
+    }
+
+    .forecast#day3 {
+        grid-area: day3;
+    }
+
+    .forecast#day4 {
+        grid-area: day4;
+    }
+
+    .forecast#day5 {
+        grid-area: day5;
+    }
+
+
+    .forecast div {
+        display: flex;
+        flex-direction: column;
+        min-width: 100px;
+        height: 200px;
         border: 1px solid #333;
+        padding: 0 1em;
     }
 
+     .forecast p:nth-child(2) {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .forecast h4 {
+        margin-top: 0;
+    }
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
