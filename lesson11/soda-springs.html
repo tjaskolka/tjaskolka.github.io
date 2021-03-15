@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community News, Events and Weather for Soda Springs, ID</title>
+    <!--link
+      href="https://fonts.googleapis.com/css2?family=Spartan&family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" type="text/css" />
+    <link rel="stylesheet" href="css/medium.css" type="text/css" />
+    <link rel="stylesheet" href="css/large.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <picture
+          ><img
+            src="images/bear-lake-logo.png"
+            alt="Bear Lake Community Board logo"
+        /></picture>
+      </div>
+      <div class="headings">
+        <h1>Bear Lake Community Board</h1>
+        <div>Reporting on Bear Lake happenings since 2021</div>
+      </div>
+    </header>
+    <nav>
+      <button onclick="togglemenu()">&#9776;</button>
+      <ul id="mobileMenu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Soda Springs, Idaho</h2>
+      <div class="hero">
+        <!--img src="images/prestonhero.jpg" alt="village landscape" /-->
+        <img src="images/prestonhero.jpg" srcset=" images/preston-hero-500.webp 600w, images/preston-hero-750.webp 800w, images/preston-hero-850.webp 1000w" sizes="(max-width: 600px) 500px, (max-width: 800px) 750px, 1000px" alt="village in valley">
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="current"></span></p>
+          <p>Temp: <span id="temp">46</span>&#8457;</p>
+          <p>Humidity: <span id="humid"></span>%</p>
+          <p>Wind speed: <span id="speed"></span> mph</p>
+          <p>Wind chill: <span id="windchill"></span></p>
+        </section>
+      </div>
+      <section class="forecast">
+        <h2>5 Day Outlook</h2>
+        <div id="day1">
+        </div>
+        <div id="day2">
+        </div>
+        <div id="day3">
+        </div>
+        <div id="day4">
+        </div>
+        <div id="day5">
+        </div>
+      </section>
+      <section class="article">
+        <h3>Make-It, Take-It Pizza Night!</h3>
+        <div>
+          <img
+            src="images/pexels-katerina-holmes-5907903.jpg"
+            alt="handmade pizza being assenmbled"
+          />
+        </div>
+        <p>
+          Bring your family to our Make-It, Take-It Pizza Night and bring dinner
+          home afterward.
+        </p>
+        <ul>
+          <li>When: Wednesday, 10 Feb 2021</li>
+          <li>Time: 5:30pm</li>
+          <li>Where: Preston Community Center</li>
+          <li>Address: 748 Pineview St.</li>
+        </ul>
+        <p>
+          Food brings families and communities together and we strengthen our
+          community when we strengthen our families. Join us in building both by
+          building the ultimate pie! The best part is, you have something to
+          take home and continue to enjoy with your family.
+          <a href="#">See more...</a>
+        </p>
+      </section>
+      <section class="contact">
+        <iframe 
+        title="Preston, ID map"
+        loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189462.9051311696!2d-112.02040111253665!3d42.09980531169445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612783748167!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <div id="contactinfo">
+          <h3>Contact information</h3>
+          <address>
+            &#x1F4EC;123 North 234 East<br />
+            Preston, ID 98765<br />
+            &#x1F4DE; 987-654-3210<br />
+            &#x1F4E7; contactus@bearlake.live
+          </address>
+          <a href="http://www.facebook.com" target="_blank" rel="noreferrer"
+            ><img src="images/02_Facebook.png" alt="facebook icon" class="icon"
+          /></a>
+          <a href="http://www.instagram.com" target="_blank" rel="noreferrer"
+            ><img
+              src="images/02_Instagram.png"
+              alt="Instagram icon"
+              class="icon"
+          /></a>
+          <a href="http://www.youtube.com" target="_blank" rel="noreferrer"
+            ><img src="images/02_Youtube.png" alt="youtube icon" class="icon"
+          /></a>
+          <a href="http://www.pinterest.com" target="_blank" rel="noreferrer"
+            ><img
+              src="images/02_Pinterest.png"
+              alt="pinterest icon"
+              class="icon"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy;<span id="currentyear"></span> Bear Lake Community Board | Weather data from
+      <a href="https://openweathermap.org">OpenWeatherMap</a> | Terri Jaskolka<br />
+      <div id="calendarDate">date</div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/weekdays.js"></script>
+    <script src="js/weather-ss.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+          families: [
+             'Spartan', 'Architects Daughter'
+          ]
+        }
+      });</script>
+  </body>
+</html>

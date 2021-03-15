@@ -5,6 +5,7 @@ function createCard(towns, townname) {
 
   town3.forEach(town =>  {
       let card = document.createElement('section');
+      card.classList.add('towncard');
       
       let h2 = document.createElement('h2');
       let motto = document.createElement('h4');
