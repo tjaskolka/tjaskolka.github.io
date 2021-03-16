@@ -21,7 +21,7 @@ function convert(kelvin) {
         document.getElementById('speed').textContent = jsObject.wind.speed;
         document.getElementById('humid').textContent = jsObject.main.humidity;
 
-
+      calcChill();
     });
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=aee2c79ef21500c6b3d3a695fdea645a";

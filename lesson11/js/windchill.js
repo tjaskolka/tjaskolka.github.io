@@ -1,6 +1,8 @@
+function calcChill() {
 let speed = parseFloat(document.querySelector("#speed").textContent);
 let temp = parseFloat(document.querySelector("#temp").textContent);
 document.getElementById("windchill").innerHTML = windChill(temp, speed);
+}
 
 function windChill(temp, speed) {
     if (temp <= 50 && speed > 3){

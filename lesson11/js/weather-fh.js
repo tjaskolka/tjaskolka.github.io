@@ -28,7 +28,7 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.038
 
 function createCard(fiveDay) {  
     const forecast = fiveDay.filter(d => d.dt_txt.includes("18:00:00")  );
-    console.log(forecast);
+//    console.log(forecast);
 let i = 1;
   forecast.forEach(day =>  {
 

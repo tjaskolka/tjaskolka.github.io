@@ -5,7 +5,6 @@ function createCard(towns, townname) {
 
   town3.forEach(town =>  {
       let card = document.createElement('section');
-      card.classList.add('towncard');
       
       let h2 = document.createElement('h2');
       let motto = document.createElement('h4');
@@ -14,9 +13,6 @@ function createCard(towns, townname) {
       let rainfall = document.createElement('p');
       let img = document.createElement('img');
       let div = document.createElement('div');
-
-      let div2 = document.createElement('p');
-      div2.innerHTML = `${town.events}`;
     
       h2.innerHTML = `${town.name}`;
       motto.innerHTML = `${town.motto}`;
@@ -39,10 +35,7 @@ function createCard(towns, townname) {
       card.append(img);
       card.append(div);
 
-      div.append(div2);
-
       document.querySelector('div.towns').appendChild(card);
-      document.querySelector('div.events').appendChild(div2);
 });
 };
 

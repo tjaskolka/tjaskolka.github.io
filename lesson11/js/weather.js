@@ -11,8 +11,6 @@ function convert(kelvin) {
     .then((response) => response.json())
     .then((jsObject) => {
 
-     
-
         //const temp = Math.round((1.8*(jsObject.main.temp - 273) + 32)*10/10);
         const temp = convert(jsObject.main.temp);
         document.getElementById('temp').textContent = temp;
@@ -21,7 +19,7 @@ function convert(kelvin) {
         document.getElementById('speed').textContent = jsObject.wind.speed;
         document.getElementById('humid').textContent = jsObject.main.humidity;
 
-
+calcChill();
     });
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=aee2c79ef21500c6b3d3a695fdea645a";
