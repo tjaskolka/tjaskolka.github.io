@@ -97,7 +97,10 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-       
+
+      .article {
+          flex-direction: row;;
+      }
     
 iframe {
     display: none;
