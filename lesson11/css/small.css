@@ -190,6 +190,49 @@ div.gallerytitle {
   width: 100%;
 }
 
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.events, .side {
+  display: flex;
+  flex-direction: column;
+}
+
+.events {
+  flex: 1 0 auto;
+  border: 1px solid #555;
+  padding: 0 0 1em 0;
+  background-image: url(../images/backgrd.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events div {
+  border: 1px solid #555;
+  padding: 0 1em;
+  background-color: #fff;
+}
+
+.events h5 {
+  font-weight: bolder;
+  text-align: left;
+}
+
+#calendar {
+  background-color: #42281d;
+  color:#c79032;
+  padding: 1em;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.sidearticle li {
+  text-align: left;
+}
+
 figcaption {
   font-family: "Architects Daughter", cursive;
   font-weight: bold;

@@ -53,8 +53,8 @@
   }
 
   .article img {
-    float: right;
-    width: 350px;
+  /*  float: right;*/
+    max-width: 350px;
   }
 
 .gallerypage {

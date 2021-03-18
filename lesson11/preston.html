@@ -49,7 +49,7 @@
     </nav>
 
     <main>
-      <h2>Preston, Idaho</h2>
+      <h2 id="townname">Preston</h2>
       <div class="hero">
         <!--img src="images/prestonhero.jpg" alt="village landscape" /-->
         <img src="images/prestonhero.jpg" srcset=" images/preston-hero-500.webp 600w, images/preston-hero-750.webp 800w, images/preston-hero-850.webp 1000w" sizes="(max-width: 600px) 500px, (max-width: 800px) 750px, 1000px" alt="village in valley">
@@ -76,6 +76,11 @@
         </div>
       </section>
       <section class="article">
+        <div class="events">
+          <h4 id="calendar">Upcoming Events</h4>
+        </div>
+        <div class="side">
+          <div class="sidearticle">
         <h3>Make-It, Take-It Pizza Night!</h3>
         <div>
           <img
@@ -100,6 +105,8 @@
           take home and continue to enjoy with your family.
           <a href="#">See more...</a>
         </p>
+        </div>
+        </div>
       </section>
       <section class="contact">
         <iframe 
@@ -152,6 +159,7 @@
     <script src="js/weekdays.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/events.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({
         google: {
