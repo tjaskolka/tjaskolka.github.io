@@ -1,6 +1,18 @@
+//choose town to pull data for
+const nameoftown = document.getElementById("townname").innerHTML;
 
+let apiURL = '';
+  switch(nameoftown) {
+    case 'Preston':
+      apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=aee2c79ef21500c6b3d3a695fdea645a";
+      break;
+    case 'Fish Haven':
+      apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.03888&lon=-111.39569&appid=aee2c79ef21500c6b3d3a695fdea645a";
+      break;
+    case 'Soda Springs':
+      apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=aee2c79ef21500c6b3d3a695fdea645a";
+  }
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=aee2c79ef21500c6b3d3a695fdea645a";
 
 function convert(kelvin) {
         let fahrenheit = Math.round((1.8*(kelvin - 273) + 32)*10/10);
@@ -11,12 +23,11 @@ function convert(kelvin) {
     .then((response) => response.json())
     .then((jsObject) => {
 
-        //const temp = Math.round((1.8*(jsObject.main.temp - 273) + 32)*10/10);
         const temp = convert(jsObject.main.temp);
         document.getElementById('temp').textContent = temp;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
         document.getElementById('current').textContent = jsObject.weather[0].main;
-        document.getElementById('speed').textContent = jsObject.wind.speed;
+        document.getElementById('speed').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('humid').textContent = jsObject.main.humidity;
 
 calcChill();
@@ -26,7 +37,7 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473
 
 function createCard(fiveDay) {  
     const forecast = fiveDay.filter(d => d.dt_txt.includes("18:00:00")  );
-    console.log(forecast);
+   
 let i = 1;
   forecast.forEach(day =>  {
 

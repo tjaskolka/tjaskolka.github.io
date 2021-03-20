@@ -43,7 +43,7 @@ h4 {
 #announcement {
   display: none;
   grid-area: banner;
-  padding: 0.5em 0 1em 0;
+  padding: 0.5em 0.5em .75em 0.5em;
   background-color: #c79032;
   color: #42281d;
   margin-bottom: 0.5em;

@@ -11,6 +11,6 @@ document.getElementById('calendarDate').innerHTML = day + ", " + date + " " + mo
 //provide current year
 document.getElementById('currentyear').innerHTML = year;
 
-if (day === "Friday") {
+if (day === "Saturday") {
     document.getElementById("announcement").style.display = "block";
 }
