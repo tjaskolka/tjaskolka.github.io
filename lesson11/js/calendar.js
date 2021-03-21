@@ -9,15 +9,23 @@ fetch(requestFile)
 
   const calendar = jsonObject['events'];
 
-  console.log(calendar);
+  calendar.sort(function(m,n){
+    return new Date(m.date) - new Date(n.date);
+  })
 
-for (let i = 0; i < 5; i++) {
+var i = 0;
+var count = 0;
+while (count < 5) {
   let date = new Date(calendar[i].date)
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  if (date >= new Date()) {
+
+if (date >= new Date()) {
 console.log(new Date(calendar[i].date).getDate() + ' ' +
       months[new Date(calendar[i].date).getMonth()] + ': ' + calendar[i].event);
+      count++;
   }
+i++;
+
 };
 
 
