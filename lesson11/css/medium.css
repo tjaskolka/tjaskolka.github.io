@@ -79,6 +79,27 @@ main {
     max-width: 75px;
     max-height: 75px;
 }
+
+#day2 img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#day3 img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#day4 img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#day5 img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
     .forecast div {
         display: flex;
         flex-direction: column;
