@@ -58,6 +58,8 @@ header img {
   background-color: #c79032;
   border-radius: 0.3em;
   margin-right: 1em;
+  width: 122px;
+  height: 81px;
 }
 
 .button, nav {
@@ -188,6 +190,7 @@ div.gallerytitle {
 
 .gallery img {
   width: 100%;
+  height 100%;
 }
 
 .article {
