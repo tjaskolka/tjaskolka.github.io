@@ -75,7 +75,10 @@ main {
         grid-area: day5;
     }
 
-
+#day1 img {
+    max-width: 75px;
+    max-height: 75px;
+}
     .forecast div {
         display: flex;
         flex-direction: column;
