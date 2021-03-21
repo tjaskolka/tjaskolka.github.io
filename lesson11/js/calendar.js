@@ -15,15 +15,20 @@ fetch(requestFile)
 
 var i = 0;
 var count = 0;
-while (count < 5) {
+let listevents = '';
+while (count < 4) {
   let date = new Date(calendar[i].date)
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 if (date >= new Date()) {
-console.log(new Date(calendar[i].date).getDate() + ' ' +
+let event = (new Date(calendar[i].date).getDate() + ' ' +
       months[new Date(calendar[i].date).getMonth()] + ': ' + calendar[i].event);
+      listevents += '<p>' + event + '</p>' ;
+      console.log(listevents);
+
       count++;
   }
+  document.getElementById('calendar').innerHTML = listevents;
 i++;
 
 };
