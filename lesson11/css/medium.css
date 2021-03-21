@@ -76,40 +76,11 @@ main {
         grid-area: day5;
     }
 
-/*#day1 img {
-    max-width: 50px;
-    max-height: 50px;
-    align-self: center;
-}
-
-#day2 img {
-    max-width: 50px;
-    max-height: 50px;
-    align-self: center;
-}
-
-#day3 img {
-    max-width: 50px;
-    max-height: 50px;
-    align-self: center;
-}
-
-#day4 img {
-    max-width: 50px;
-    max-height: 50px;
-}
-
-#day5 img {
-    max-width: 50px;
-    max-height: 50px;
-    align-self: center;
-}*/
-
     .forecast div {
         display: flex;
         flex-direction: column;
         min-width: 100px;
-        height: 180px;
+        height: 170px;
         border: 1px solid #333;
         padding: 0 1em;
     }
