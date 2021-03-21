@@ -28,7 +28,7 @@ let event = (new Date(calendar[i].date).getDate() + ' ' +
 
       count++;
   }
-  document.getElementById('calendar').innerHTML = listevents;
+  document.getElementById('eventlist').innerHTML = listevents;
 i++;
 
 };
