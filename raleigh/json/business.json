@@ -1,0 +1,82 @@
+{
+  "business": [
+    {
+      "name": "Light is Love Candles",
+      "url": "https://lightislovecandles.com",
+      "address1": "5959 Triangle Town Blvd",
+      "address2": "Raleigh, NC 27616",
+      "phone": "919-600-4944",
+      "email": "lightislovecandles@gmail.com",
+      "pic": "images/candlemaking.webp",
+      "logo": "inages/light-is-love-logo.webp",
+      "about": "Handmade soy candles, phthalate-free fragrances and no dyes so they match any decor."
+    },
+
+    {
+      "name": "Margaux's Restaurant",
+      "url": "https://margauxsrestaurant.com",
+      "address1": "8111 Creedmoor Rd, Ste 111",
+      "address2": "Raleigh, NC 27613",
+      "phone": "919-846-9846",
+      "email": "n/a",
+      "pic": "images/restaurant-interior.webp",
+      "logo": "images/margauxs-logo.webp",
+      "about": "Fine dining with the freshest food featuring locally grown ingredients. Menu is a unique fusion of Southern, French and Asian."
+    },
+
+    {
+      "name": "Edible Art",
+      "url": "https://edibleartnc.com",
+      "address1": "4351-115 The Circle at Nort Hills",
+      "address2": "Raleigh, NC 27609",
+      "phone": "919-856-0604",
+      "email": "info@edibleartnc.com",
+      "logo": "images/edible-art-logo.webp",
+      "about": "Wedding cakes and other pastries all made from scratch using the finest ingredients. A multitude of flavor options are available. We also provide gluten-free options. "
+    },
+
+    {
+        "name": "Klaystation",
+        "url": "https://klaystation.com",
+        "address1": "10511 Shadowlawn Drive #113",
+        "address2": "Raleigh, NC 27614",
+        "phone": "919-848-8079",
+        "email": "info@klaystation.com",
+        "logo": "images/klaystation-logo.webp",
+        "about": "Family-friendly ceramic studio where you can devise your own creation from scratch or paint one of our premade designs."
+    },
+
+    {
+        "name": "Istina Design",
+        "url": "http://istinadesign.com",
+        "address1": "5308 Wallingford Dr",
+        "address2": "Raleigh, NC 27616",
+        "phone": "919-229-9165",
+        "email": "info@istinadesign.com",
+        "logo": "images/istina-design-logo.webp",
+        "about": "Handmade, custom crafted clothing designed to fit and make YOU look good, not just the designer."
+    },
+
+    {
+        "name": "The English Garden",
+        "url": "https://englishgardenraleigh.com",
+        "address1": "6308 Angus Drive, Ste A",
+        "address2": "Raleigh, NC 27617",
+        "phone": "919-341-6650",
+        "email": "info@englishgardenraleigh.com",
+        "logo": "images/english-garden-logo.webp",
+        "about": "Specialty floral designs for any occasion, pick up or delivered. Classes in floral design are also available."
+    },
+
+    {
+        "name": "The Honey Do Husband",
+        "url": "thehoneydohusband.com",
+        "address1": "1004 Trollingwood Ln",
+        "address2": "Raleigh, NC 27615",
+        "phone": "919-847-2821",
+        "email": "doug@thehoneydohusband.com",
+        "logo": "images/na-logo.webp",
+        "about": "Almost 20 years of handman services given to the Raleigh area. No job too small!"
+    }
+  ]
+}
