@@ -38,6 +38,24 @@ html {
       box-shadow: 4px 4px 8px;
   }
 
+  #currentCond {
+    vertical-align: -80%;
+  }
+
+  header figure {
+    margin: .4rem;
+  }
+
+  header figcaption {
+    font-size: .8rem;
+    font-weight: bold;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
   h2 {
       font-size: 1.5rem;
       font-weight: bold;
@@ -50,6 +68,34 @@ html {
 nav {
     background-color: #c2a83e;
 }
+
+nav ul {
+  list-style-type: none;
+}
+
+#alert {
+  background-color: #f45b69;
+  color: #fffdf7;
+  font-family: 'Lora';
+  padding: .5rem;
+  display: block;
+}
+
+#alert p:nth-child(odd){
+  font-size: .8rem;
+}
+
+#alert p:nth-child(even) {
+  font-size: 1.1rem;
+}
+
+#close {
+  display: block;
+  position: absolute;
+  left: 1rem;
+}
+
+
 
   footer {
       background-color: #c2a83e;

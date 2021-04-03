@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raleigh, North Carolina Chamber of Commerce</title>
-    <meta name="description" content="About the Raleigh Chamber of Commerce, its purpose, how to join and member businesses">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:wght@500&display=swap" rel="stylesheet">
+    <meta name="description" content="Raleigh, North Carolina, Chamber of Commerce, its purpose, how to join and member businesses">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,11 +17,26 @@
   </head>
   <body>
     <header>
-        <div class="alert"></div>
+        <div id="alert">
+          <button id="close">&times;</button>
+        </div>
+        <div>
+        <figure>
         <img src="images/acorn.webp" alt="acorn icon" class="icon">
-      
-    </header>
-    <nav>
+        <figcaption>City of Oaks</figcaption>
+        </figure>
+        <h1>Raleigh Chamber of Commerce</h1>
+         <img 
+    srcset="
+    images/raleigh-skyline-1600x500.webp 1600w,
+    images/raleigh-skyline-960x540.webp 960w,
+    images/raleigh-skyline-640x360.webp 640w
+    "
+    src="images/raleigh-skyline-960x540.webp"
+    alt="Raleigh skyline">
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><img src="images/iconmonstr-facebook-6-32.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><img src="images/iconmonstr-instagram-13-32.png" alt="instagram icon"></a>
+ <nav>
       <ul>
           <li><a href="#">Home</a></li>
           <li><a href="about-raleigh.html">Raleigh</a></li>
@@ -31,16 +45,73 @@
           <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
-
+      <div id="current">
+        <p>Current temp: <span id="currentTemp"></span>&#8457;</p>
+        <p><img src="" id="currentCond"> <span id="condition"></span></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+      </div>
+    </header> 
     <main>
+   
 
+   
+
+   
+      <section>
+        <div><h3>3-Day Forecast</h3></div>
+        <div id="day1"></div>
+        <div id="day2"></div>
+        <div id="day3"></div>
+      </section>
+      <section>
+        <h3>Purpose</h3>
+        <p>The Raleigh Chamber of Commerce is here to provide a platform for our local businesses to be able to network with one another, to promote their products and services and to promote our community as a great place to be doing business.</p>
+        <img src="images/open-sign.webp" alt="open sign" loading="lazy">
+      </section>
+      <section>
+        <h3>Join</h3>
+        <p>Are you a small business in the Raleigh area? Would you like to be a part of a thriving group of businesses? Find out more about the advantages of joining by clicking on the link below.</p>
+        <img src="images/cooperation.webp" alt="circle of people joining hands at center" loading="lazy">
+        <button>Apply now</button>
+      </section>
+      <section>
+        <h3>Highlighted Businesses</h3>
+        <div>
+        <h4>The Honey Do Husband</h4>
+          <p>Need someone to mow the lawn, install an appliance, or repair the drywall? The Honey Do Husband will do all that and more. Run by a Triangle native and lifelong handyman.</p>
+          <img src="images/handyman.webp" alt="man screwing in lightbulb" loading="lazy">
+        </div>
+        <div>
+          <h4>Light is Love Candles</h4>
+          <p>Did you know that soy candles burn longer and with less soot than paraffin? Light is Love makes 100% soy candles without artifical coloring which means they will blend in to any decor. Handmade in small batches, you will be sure to feel the love with which they are made.</p>
+          <img src="images/candlemaking.webp" alt="woman assembling candle" loading="lazy">
+        </div>
+        <div>
+          <h4>Klaystation</h4>
+          <p>Have the urge to create something but don't know where to start? Come visit Klaystation where there are a variety of guided creative activities to satisfy that urge. From pottery shaping to painting, our family-friendly facility will help you create something you will be proud to show off.</p>
+          <img src="images/woman-with-pots.webp" alt="woman holding handmade ceramic pots" loading="lazy">
+        </div>
+      </section>
+      <section>
+        <h3>Upcoming Events</h3>
+          <p>April 15th: Deadline for filing federal taxes</p>
+          <p>April 21st: Midweek Lunch and Learn. Topic: SEO for your website.</p>
+          <p>April 30th: Munch and Mingle. Come meet your fellow entrepreneurs!</p>
+      </section>
     </main>
     <footer>
-      &copy;<span id="currentyear"></span> 
-      Raleigh Chamber of Commerce |
-      Terri Jaskolka<br />
+      <p>&copy;<span id="currentyear"></span> 
+      Raleigh Chamber of Commerce </p>
+      <p>8609 Olde Station Drive</p>
+      <p>Raleigh, NC 27615</p>
+      <p>919-876-8475</p>
+      <p>info@raleigh.biz</p>
+      <p>Last modified: <span id="moddate"></span></p>
+      <a href="attributions.html">Attributions</a> 
     </footer>
     <script src="js/weather.js"></script>
+    <script src="js/close.js"></script>
+    <script src="js/date.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({
         google: {
