@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raleigh, North Carolina Chamber of Commerce</title>
-    <meta name="description" content="Raleigh, North Carolina, Chamber of Commerce, its purpose, how to join and member businesses">
+    <title>Apply to join the Raleigh, North Carolina Chamber of Commerce</title>
+    <meta name="description" content="Form to apply for membership to the Raleigh Chamber of Commerce">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon.png">
     <link
       rel="stylesheet"
@@ -17,9 +17,6 @@
   </head>
   <body>
     <header>
-        <div id="alert">
-          <button id="close">&times;</button>
-        </div>
         <div>
         <figure>
         <img src="images/acorn.webp" alt="acorn icon" class="icon">
@@ -48,24 +45,112 @@
           <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
-      <div id="current">
-        <p>Current temp: <span id="currentTemp"></span>&#8457;</p>
-        <p><img src="" id="currentCond"> <span id="condition"></span></p>
-        <p>Humidity: <span id="humidity"></span>%</p>
-      </div>
     </header> 
     <main>
    
+<form method="get" action="thanks.html">
+    <fieldset>
+        <legend>Contact information</legend>
+        <label>*First name <input type="text" name="firstname" pattern="[A-Za-z-\.\s] {3, }" required></label>
+        <label>*Last name <input type="text" name="lastname" pattern="[A-Za-z-\.\s] {3, }" required></label>
+        <label>Title <input type="radio" name="title" value="mr"> Mr.</label>
+        <label><input type="radio" name="title" value="ms"> Ms.</label>
+        <label>*Email <input type="email" name="email" placeholder="user@email.com"></label>
+        <label>Cell phone <input type="tel" name="phone"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Business Information</legend>
+        <label>*Business name <input type="text" name="bizname" required></label>
+        <label>Address 1 <input type="text" name="address1" placeholder="123 Main St"></label>
+        <label>Address 2 <input type="text" name="address2" placeholder="Raleigh, NC 27615"></label>
+        <label>Website <input type="url" name="bizurl" placeholder="www.mybiz.com"></label>
+        <label>Description: <textarea name="bizdesc" rows="3" cols="30" id="desc"></textarea></label>
+    </fieldset>
+    <fieldset>
+        <legend>Choose a membership level:</legend>
+        <label><select name="membership">
+            <option value="" selected disabled>Select one...</option>
+            <option value="nonprofit">Non-profit ($100)</option>
+            <option value="bronze">Bronze ($200)</option>
+            <option value="silver">Silver ($400)</option>
+            <option value="gold">Gold ($1000)</option>
+        </select></label>
+    </fieldset>
+</form>
+   
+<table>
+    <thead>
+        <tr>
+            <th>Membership Level</th>
+            <th>Newsletter</th>
+            <th>Business directory listing</th>
+            <th>Tax consult discount</th>
+            <th>Business insurance discount</th>
+            <th>Facebook ad credit</th>
+            <th>Visitors Guide listing</th>
+            <th>Premier business listing</th>
+            <th>Chamber Approved web badge</th>
+            <th>Monthly luncheon</th>
+            <th>Business launch coach</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Non-profit ($100)</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Bronze ($200)</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Silver ($400)</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Gold ($1000)</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </tbody>
+</table>
 
    
-
-   
-      <section class="forecast">
-        <div><h3>3-Day Forecast</h3></div>
-        <div id="day1"></div>
-        <div id="day2"></div>
-        <div id="day3"></div>
-      </section>
       <section>
         <h3>Purpose</h3>
         <p>The Raleigh Chamber of Commerce is here to provide a platform for our local businesses to be able to network with one another, to promote their products and services and to promote our community as a great place to be doing business.</p>
@@ -112,7 +197,6 @@
       <p>Last modified: <span id="moddate"></span></p>
       <a href="attributions.html">Attributions</a> 
     </footer>
-    <script src="js/weather.js"></script>
     <script src="js/close.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/date.js"></script>

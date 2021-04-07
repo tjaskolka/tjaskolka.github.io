@@ -18,7 +18,7 @@ html {
   
   header,
   h1,
-  h2, h3, nav, footer {
+  h2, h3, footer {
     margin: 0 auto;
     padding: 10px 0;
     font-family: 'Cinzel Decorative', serif;
@@ -40,6 +40,18 @@ html {
 
   #currentCond {
     vertical-align: -80%;
+  }
+
+  #current {
+    margin: 1rem 0;
+  }
+
+  #current p {
+    margin: 0 auto;
+  }
+
+  .social {
+    vertical-align: -20%;
   }
 
   header figure {
@@ -67,10 +79,67 @@ html {
 
 nav {
     background-color: #c2a83e;
+    padding: 1px 0 0;
 }
 
 nav ul {
   list-style-type: none;
+}
+
+.button, nav {
+  background-color: #243e36;
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button, nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: #c2a83e;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+#icons {
+  display:flex;
+  justify-content: flex-end;
+}
+
+#icons img  {
+  padding: 0 .25em;
+}
+
+#icons button {
+  margin-right: auto;
+  margin-bottom: .25rem;
+  margin-left: .25rem;
 }
 
 #alert {
@@ -78,7 +147,6 @@ nav ul {
   color: #fffdf7;
   font-family: 'Lora';
   padding: .5rem;
-  display: block;
 }
 
 #alert p:nth-child(odd){
@@ -95,7 +163,70 @@ nav ul {
   left: 1rem;
 }
 
+#alert button {
+  font-size: 1.5rem;
+}
 
+#alert {
+  display: none;
+}
+
+#icons button {
+  height: 38px;
+  width: 44px;
+  font-size: 2rem;
+}
+
+section {
+  border: 1px solid #000d07;
+}
+
+section img {
+  display: block;
+  margin: 0 auto 1rem;;
+}
+
+section p {
+  padding: 0 1rem;
+}
+
+section div {
+  padding: 1rem;
+}
+
+.business div:nth-child(even) {
+  background-color: #c2a83e;
+}
+
+.forecast {
+  display: none;
+}
+
+.listing {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.listing img {
+  max-width: 130px;
+  max-height: 100px;
+}
+
+.item {
+  width: 260px;
+  height: 260px;
+  background:#c2a83e;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.buttons {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
   footer {
       background-color: #c2a83e;

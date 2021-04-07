@@ -6,33 +6,30 @@ fetch(weatherCall)
   .then((jsObject) => {
     console.log(jsObject);
 
-    const startalert = new Date(jsObject.alerts[0].start * 1000);
-    const endalert = new Date(jsObject.alerts[0].end * 1000);
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let alert = jsObject;
 
+    if ("alerts" in jsObject) {
+      document.getElementById("alert").style.display = "block";
 
-function postAlerts(alerts) {
-    
-  
-let i = 0;
-alerts.forEach(alert => {
+      function postAlerts(alerts) {
+        let i = 0;
+        alerts.forEach((alert) => {
+          let div = document.getElementById("alert");
 
-    let div = document.getElementById('alert');
+          let event = document.createElement("p");
+          event.innerHTML = `${alert.event}`;
 
-    let event = document.createElement('p');
-    event.innerHTML = `${alert.event}`;
+          let desc = document.createElement("p");
+          desc.innerHTML = `${alert.description}`;
 
-    let desc = document.createElement('p');
-    desc.innerHTML = `${alert.description}`;
+          div.appendChild(event);
+          div.appendChild(desc);
+        });
+      }
 
-    div.appendChild(event);
-    div.appendChild(desc);
-
-});
-};
-
-const alerts = jsObject['alerts'];
-    postAlerts(alerts);
+      const alerts = jsObject["alerts"];
+      postAlerts(alerts);
+    }
 
     document.getElementById("currentTemp").textContent = Math.round(
       jsObject.current.temp
@@ -48,7 +45,15 @@ const alerts = jsObject['alerts'];
       jsObject.current.weather[0].main;
     document.getElementById("humidity").textContent = jsObject.current.humidity;
 
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
 
     for (let i = 1; i < 4; i++) {
       let div = document.getElementById("day" + i);
@@ -75,5 +80,3 @@ const alerts = jsObject['alerts'];
       div.appendChild(h4);
     }
   });
-
-  
