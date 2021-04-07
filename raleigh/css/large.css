@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1000px) {
+
+    #icons button {
+        display: none;
+      }
+    
+      nav ul.hide {
+        display: block;
+      }
+    
+      nav ul {
+        margin-left: 2%;
+        margin: auto 0;
+      }
+    
+      #mobileMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    
+      #mobilemenu li {
+        flex: 1;
+      }
+    
+      nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0.8rem 1rem;
+      }
+    
+      nav ul li a:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    
+
+}

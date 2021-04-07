@@ -5,7 +5,7 @@ html {
   body {
     background-color: #1b98e0;
     color: #000d07;
-    font-family: 'Lora', serif;
+    font-family: 'Galdeano', 'sans serif';
     font-size: 16px;
   }
   
@@ -144,17 +144,17 @@ nav ul.hide {
 
 #alert {
   background-color: #f45b69;
-  color: #243e36;
-  font-family: 'Lora';
+  color: #000d07;
+  font-family: 'Galdeano';
   padding: .5rem;
 }
 
 #alert p:nth-child(odd){
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 #alert p:nth-child(even) {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #close {
@@ -204,9 +204,11 @@ section div {
 
 #listing {
   list-style: none;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #listing img {
