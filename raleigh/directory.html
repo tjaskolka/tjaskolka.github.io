@@ -53,8 +53,8 @@
     </nav>
 
     <main>
-      <div class="buttons"><img src="images/grid.png" alt="grid view button" class="gridbtn" onclick="document.getElementByClassName('listing').style.flex-direction = 'row'"><img src="images/list.png" alt="list view button" class="listbtn" onclick="document.getElementByClassName('listing').style.flex-direction = 'column'"></div>
-<ul class="listing"></ul>
+      <div class="buttons"><button onclick="document.getElementById('listing').style.flexDirection = 'row'"><img src="images/grid.png" alt="grid view button"></button> Grid view<button onclick="document.getElementById('listing').style.flexDirection = 'column'"><img src="images/list.png" alt="list view button"></button> List view</div>
+<ul id="listing"></ul>
     </main>
     <footer>
       <p>&copy;<span id="currentyear"></span> 

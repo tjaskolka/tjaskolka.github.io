@@ -16,12 +16,18 @@ fetch(weatherCall)
         alerts.forEach((alert) => {
           let div = document.getElementById("alert");
 
+          let btn = document.createElement('button');
+          btn.setAttribute('id', 'close');
+          btn.setAttribute('onclick', "document.getElementById('alert').style.display='none'");
+          btn.innerHTML = '\u00D7';
+
           let event = document.createElement("p");
           event.innerHTML = `${alert.event}`;
 
           let desc = document.createElement("p");
           desc.innerHTML = `${alert.description}`;
 
+          div.appendChild(btn);
           div.appendChild(event);
           div.appendChild(desc);
         });
@@ -29,6 +35,8 @@ fetch(weatherCall)
 
       const alerts = jsObject["alerts"];
       postAlerts(alerts);
+
+    
     }
 
     document.getElementById("currentTemp").textContent = Math.round(

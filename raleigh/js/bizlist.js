@@ -40,7 +40,7 @@ fetch(requestURL)
             card.append(phone);
             card.append(email);
 
-            document.querySelector('ul.listing').appendChild(card);
+            document.querySelector('ul#listing').appendChild(card);
 
             
 

@@ -144,7 +144,7 @@ nav ul.hide {
 
 #alert {
   background-color: #f45b69;
-  color: #fffdf7;
+  color: #243e36;
   font-family: 'Lora';
   padding: .5rem;
 }
@@ -202,14 +202,14 @@ section div {
   display: none;
 }
 
-.listing {
+#listing {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.listing img {
+#listing img {
   max-width: 130px;
   max-height: 100px;
 }
@@ -226,6 +226,7 @@ section div {
   display:flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
   footer {
