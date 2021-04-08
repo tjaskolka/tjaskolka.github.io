@@ -18,30 +18,35 @@
   <body>
     <header>
         <div id="alert">
-          <!--button id="close">&times;</button-->
         </div>
-        <div>
-        <figure>
-        <img src="images/acorn.webp" alt="acorn icon" class="icon">
-        <figcaption>City of Oaks</figcaption>
-        </figure>
-        <h1>Raleigh Chamber of Commerce</h1>
+    <div>
+      <figure>
+      <img src="images/acorn.webp" alt="acorn icon" class="icon">
+      <figcaption>City of Oaks</figcaption>
+      </figure>
+      <h1>Raleigh Chamber of Commerce</h1>
          <img 
     srcset="
     images/raleigh-skyline-1600x500.webp 1600w,
-    images/raleigh-skyline-960x540.webp 960w,
+    images/raleigh-skyline-960x300.webp 960w,
     images/raleigh-skyline-640x360.webp 640w
     "
-    src="images/raleigh-skyline-960x540.webp"
+    sizes="100vw"
+    src="images/raleigh-skyline-960x300.webp"
     alt="Raleigh skyline">
+    </div>        
+    
+
+     
     <div id="icons">
     <button onclick="togglemenu()">&#9776;</button> 
-    <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="social"><img src="images/iconmonstr-facebook-6-32.png" alt="facebook icon"></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="social"><img src="images/iconmonstr-facebook-6-32.png" alt="facebook icon"></a>
         <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="social"><img src="images/iconmonstr-instagram-13-32.png" alt="instagram icon"></a>
+
         </div>
  <nav>
   <ul id="menu" class="hide">
-          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="about-raleigh.html">Raleigh</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
@@ -66,36 +71,71 @@
         <div id="day2"></div>
         <div id="day3"></div>
       </section>
-      <section>
+      <div class="lgview">
+      <div class="lgcol1">
+      <section class="article">
+        <div>
         <h3>Purpose</h3>
-        <p>The Raleigh Chamber of Commerce is here to provide a platform for our local businesses to be able to network with one another, to promote their products and services and to promote our community as a great place to be doing business.</p>
+        <p>The Raleigh Chamber of Commerce is here to provide a platform for our local businesses to be able to network with one another, to promote their products and services and to promote our community as a great place to be doing business.</p></div>
         <img src="images/open-sign.webp" alt="open sign" loading="lazy">
       </section>
-      <section>
-        <h3>Join</h3>
-        <p>Are you a small business in the Raleigh area? Would you like to be a part of a thriving group of businesses? Find out more about the advantages of joining by clicking on the link below.</p>
-        <img src="images/cooperation.webp" alt="circle of people joining hands at center" loading="lazy">
-        <button>Apply now</button>
+      <section class="gallery">
+        <h3>Gallery</h3>
+        <figure>
+          <img src="images/horseback-ride.webp" alt="horseback riding in the park">
+          <figcaption>A horseback ride in Umstead Park</figcaption>
+        </figure>
+        <figure>
+          <img src="images/museums.webp" alt="museums in downtown Raleigh">
+          <figcaption>Museums in downtown Raleigh</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mudcats.webp" alt="Raleigh Mudcats baseball game">
+          <figcaption>Raleigh Mudcats baseball game</figcaption>
+        </figure>
+        <figure>
+          <img src="images/raleigh-cityscape.webp" alt="sky view of raleigh city">
+          <figcaption>Raleigh cityscape</figcaption>
+        </figure>
       </section>
-      <section class="business">
+      </div>
+      <div class="lgcol2">
+      <section class="article">
+        <div class="join">
+        <h3>Join</h3>
+        <p>Are you a small business in the Raleigh area? Would you like to be a part of a thriving group of businesses? Find out more about the advantages of joining by clicking on the link below.</p><button>Apply now</button>
+      </div>
+      <div class="join imgwrap">
+        <img src="images/cooperation.webp" alt="circle of people joining hands at center" loading="lazy">
+      </div>
+       
+      </section>
+      <section class="business article">
         <h3>Highlighted Businesses</h3>
-        <div>
+        <div class="article">
         <h4>The Honey Do Husband</h4>
           <p>Need someone to mow the lawn, install an appliance, or repair the drywall? The Honey Do Husband will do all that and more. Run by a Triangle native and lifelong handyman.</p>
+          </div>
+          <div class="join imgwrap">
           <img src="images/handyman.webp" alt="man screwing in lightbulb" loading="lazy">
-        </div>
-        <div>
+          </div>
+        <div class="article">
           <h4>Light is Love Candles</h4>
           <p>Did you know that soy candles burn longer and with less soot than paraffin? Light is Love makes 100% soy candles without artifical coloring which means they will blend in to any decor. Handmade in small batches, you will be sure to feel the love with which they are made.</p>
+          </div>
+          <div class="imgwrap">
           <img src="images/candlemaking.webp" alt="woman assembling candle" loading="lazy">
         </div>
-        <div>
+        <div class="article">
           <h4>Klaystation</h4>
           <p>Have the urge to create something but don't know where to start? Come visit Klaystation where there are a variety of guided creative activities to satisfy that urge. From pottery shaping to painting, our family-friendly facility will help you create something you will be proud to show off.</p>
+          </div>
+          <div class="imgwrap">
           <img src="images/woman-with-pots.webp" alt="woman holding handmade ceramic pots" loading="lazy">
         </div>
       </section>
-      <section>
+      </div></div>
+      <section class="events">
         <h3>Upcoming Events</h3>
           <p>April 15th: Deadline for filing federal taxes</p>
           <p>April 21st: Midweek Lunch and Learn. Topic: SEO for your website.</p>

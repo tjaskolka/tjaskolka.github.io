@@ -38,12 +38,21 @@ html {
       box-shadow: 4px 4px 8px;
   }
 
+  header img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   #currentCond {
     vertical-align: -80%;
   }
 
   #current {
     margin: 1rem 0;
+  }
+
+  #current img {
+    width: 50px;
   }
 
   #current p {
@@ -80,10 +89,6 @@ html {
 nav {
     background-color: #c2a83e;
     padding: 1px 0 0;
-}
-
-nav ul {
-  list-style-type: none;
 }
 
 .button, nav {
@@ -130,6 +135,8 @@ nav ul.hide {
 #icons {
   display:flex;
   justify-content: flex-end;
+  gap: 1rem;
+  width: 95%;
 }
 
 #icons img  {
@@ -140,6 +147,9 @@ nav ul.hide {
   margin-right: auto;
   margin-bottom: .25rem;
   margin-left: .25rem;
+  height: 38px;
+  width: 44px;
+  font-size: 2rem;
 }
 
 #alert {
@@ -171,31 +181,42 @@ nav ul.hide {
   display: none;
 }
 
-#icons button {
-  height: 38px;
-  width: 44px;
-  font-size: 2rem;
+.gallery {
+  display:none;
 }
 
-section {
+section.article, section.gallery {
   border: 1px solid #000d07;
 }
 
 section img {
   display: block;
-  margin: 0 auto 1rem;;
+  margin: 0 auto;
 }
 
 section p {
   padding: 0 1rem;
 }
 
-section div {
-  padding: 1rem;
+.gallery, .events {
+  text-align: center;
 }
 
-.business div:nth-child(even) {
+.business div:nth-child(4n+2) {
   background-color: #c2a83e;
+}
+
+.business div:nth-child(4n+3) {
+  background-color: #c2a83e;
+  width: 100%;
+}
+
+.join p {
+  text-align: left;
+}
+
+.join {
+  text-align: center;
 }
 
 .forecast {
@@ -231,6 +252,62 @@ section div {
   
 }
 
+@media only screen and (max-width: 840px) {
+
+
+table, thead, tbody, th, td, tr {
+  display: block;
+}
+
+thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr:nth-child(1) {
+  background: white;
+}
+
+tr:nth-child(2) {
+  background: goldenrod;
+}
+
+tr:nth-child(3) {
+  background: silver;
+}
+
+tr:nth-child(4) {
+  background: gold;
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  padding-left: 50%;
+}
+
+td:before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 40%;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+
+td:nth-of-type(1):before {
+  content: "Membership level";
+}
+
+td:nth-of-type(2):before {
+  content: "Newsletter";
+}
+
+
+
+}
   footer {
       background-color: #c2a83e;
       font-size: .8rem;

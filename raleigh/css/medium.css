@@ -1,7 +1,136 @@
 @media only screen and (min-width: 520px) {
 
+    #icons button {
+        display: none;
+      }
+    
+      nav ul.hide {
+        display: block;
+      }
+    
+      nav ul {
+        margin-left: 2%;
+        margin: auto 0;
+      }
+    
+      #menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    
+      #menu li {
+        flex: 1;
+        font-size: 1rem;
+      }
+    
+      nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0.8rem 1rem;
+      }
+    
+      nav ul li a:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    
+
+
 .forecast {
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
 }
 
+.forecast #day1, #day2, #day3 {
+    width: 150px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: .7rem;
+}
+
+.forecast div:nth-child(even) {
+    background-color: #cccccc;
+}
+
+.heroimg {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.herotxt {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+  }
+
+#current {
+    display: flex;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 0;
+}
+
+.article > * {
+    flex: 300px auto;
+}
+
+.article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.article img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 841px) {
+th {
+    background: white;
+}
+
+tr {
+    height: 2rem;
+}
+
+td {
+    text-align: center;
+    padding: .3rem;
+}
+
+tr:nth-child(1) {
+    background: skyblue;
+  }
+  
+  tr:nth-child(2) {
+    background: goldenrod;
+  }
+  
+  tr:nth-child(3) {
+    background: silver;
+  }
+  
+  tr:nth-child(4) {
+    background: gold;
+  }
+  
+  td {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+  }
+} 
 }
