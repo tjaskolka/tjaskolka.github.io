@@ -80,10 +80,6 @@
     padding: 1rem 1rem 0;
 }
 
-.article > * {
-    flex: 300px auto;
-}
-
 .article:nth-child(odd) {
     flex-direction: row-reverse;
 }
