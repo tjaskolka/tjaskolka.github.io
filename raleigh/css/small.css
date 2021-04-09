@@ -454,7 +454,7 @@ form legend {
 }
 
 form label.sbs {
-  display: block;
+  display: inline;
   padding: 0.75rem 0;
 }
 

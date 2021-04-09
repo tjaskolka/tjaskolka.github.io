@@ -56,22 +56,23 @@
         <legend>Contact information</legend>
         <label class="top">*First name <input type="text" name="firstname" pattern="[A-Za-z-\.\s] {3, }" required></label>
         <label class="top">*Last name <input type="text" name="lastname" pattern="[A-Za-z-\.\s] {3, }" required></label>
-        <label class="top">Title: <input type="radio" name="title" value="mr"> Mr.</label>
-        <label class="sbs"><input type="radio" name="title" value="ms"> Ms.</label>
+        <div>Title: &nbsp;
+        <label class="sbs"><input type="radio" name="title" value="mr"> Mr.</label>
+        <label class="sbs"><input type="radio" name="title" value="ms"> Ms.</label></div>
         <label class="top">*Email <input type="email" name="email" placeholder="user@email.com"></label>
-        <label>Cell phone <input type="tel" name="phone"></label>
+        <label class="top">Cell phone <input type="tel" name="phone"></label>
     </fieldset>
     <fieldset>
         <legend>Business Information</legend>
-        <label>*Business name <input type="text" name="bizname" required></label>
-        <label>Address 1 <input type="text" name="address1" placeholder="123 Main St"></label>
-        <label>Address 2 <input type="text" name="address2" placeholder="Raleigh, NC 27615"></label>
-        <label>Website <input type="url" name="bizurl" placeholder="www.mybiz.com"></label>
+        <label class="top">*Business name <input type="text" name="bizname" required></label>
+        <label class="top">Address 1 <input type="text" name="address1" placeholder="123 Main St"></label>
+        <label class="top">Address 2 <input type="text" name="address2" placeholder="Raleigh, NC 27615"></label>
+        <label class="top">Website <input type="url" name="bizurl" placeholder="www.mybiz.com"></label><br>
         <label>Description: <textarea name="bizdesc" rows="3" cols="30" id="desc"></textarea></label>
     </fieldset>
     <fieldset>
         <legend>Choose a membership level:</legend>
-        <label><select name="membership">
+        <label class="top"><select name="membership">
             <option value="" selected disabled>Select one...</option>
             <option value="nonprofit">Non-profit ($100)</option>
             <option value="bronze">Bronze ($200)</option>
