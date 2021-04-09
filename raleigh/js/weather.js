@@ -4,7 +4,6 @@ const weatherCall =
 fetch(weatherCall)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     let alert = jsObject;
 
@@ -47,11 +46,21 @@ fetch(weatherCall)
       jsObject.current.weather[0].icon +
       ".png";
     const desc = jsObject.current.weather[0].description;
-    document.getElementById("currentCond").setAttribute("src", imagesrc);
-    document.getElementById("currentCond").setAttribute("alt", desc);
-    document.getElementById("condition").textContent =
-      jsObject.current.weather[0].main;
+
+    let currcond = document.getElementById('currentcond');
+
+    let img = document.createElement('img');
+    img.setAttribute('src', imagesrc);
+    img.setAttribute('alt', desc);
+    img.setAttribute('id', 'currentimg');
+
+    let cond = document.createElement('span');
+    cond.setAttribute('id', 'condition');
+    cond.innerHTML = jsObject.current.weather[0].main;
     document.getElementById("humidity").textContent = jsObject.current.humidity;
+
+    currcond.appendChild(img);
+    currcond.appendChild(cond);
 
     const days = [
       "Sunday",
