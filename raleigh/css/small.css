@@ -39,10 +39,14 @@ html {
   }
 
   header img {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
+  img {
+    max-width: 100%;
+  }
+  
   #currentCond {
     vertical-align: -80%;
   }
@@ -198,17 +202,24 @@ section p {
   padding: 0 1rem;
 }
 
+.lgcol2 img {
+  min-width: 230px;
+}
+
+.lgcol1 img {
+  min-width: 230px;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
 .gallery, .events {
   text-align: center;
 }
 
-.business div:nth-child(4n+2) {
+.business div:nth-child(even) {
   background-color: #c2a83e;
-}
-
-.business div:nth-child(4n+3) {
-  background-color: #c2a83e;
-  width: 100%;
 }
 
 .join p {
