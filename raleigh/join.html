@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/small.css" type="text/css" />
     <link rel="stylesheet" href="css/medium.css" type="text/css" />
     <link rel="stylesheet" href="css/large.css" type="text/css" />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.png" />
   </head>
   <body>
     <header>
@@ -54,11 +54,11 @@
 <form method="get" action="thanks.html">
     <fieldset>
         <legend>Contact information</legend>
-        <label>*First name <input type="text" name="firstname" pattern="[A-Za-z-\.\s] {3, }" required></label>
-        <label>*Last name <input type="text" name="lastname" pattern="[A-Za-z-\.\s] {3, }" required></label>
-        <label>Title <input type="radio" name="title" value="mr"> Mr.</label>
-        <label><input type="radio" name="title" value="ms"> Ms.</label>
-        <label>*Email <input type="email" name="email" placeholder="user@email.com"></label>
+        <label class="top">*First name <input type="text" name="firstname" pattern="[A-Za-z-\.\s] {3, }" required></label>
+        <label class="top">*Last name <input type="text" name="lastname" pattern="[A-Za-z-\.\s] {3, }" required></label>
+        <label class="top">Title: <input type="radio" name="title" value="mr"> Mr.</label>
+        <label class="sbs"><input type="radio" name="title" value="ms"> Ms.</label>
+        <label class="top">*Email <input type="email" name="email" placeholder="user@email.com"></label>
         <label>Cell phone <input type="tel" name="phone"></label>
     </fieldset>
     <fieldset>
@@ -79,6 +79,7 @@
             <option value="gold">Gold ($1000)</option>
         </select></label>
     </fieldset>
+    <input type="submit" value="Start my Membership" class="button">
 </form>
    
 <table id="membership">
@@ -178,7 +179,7 @@
     <script>WebFont.load({
         google: {
           families: [
-             'Cinzel Decorative:wght@700', 'Lora:wght@500'
+             'Cinzel Decorative:wght@700', 'Galdeano'
           ]
         }
       });</script>

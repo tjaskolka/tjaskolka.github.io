@@ -316,11 +316,167 @@ td:nth-of-type(2):before {
   content: "Newsletter";
 }
 
+td:nth-of-type(3):before {
+  content: "Business directory listing";
+}
 
+td:nth-of-type(4):before {
+  content: "Tax consult discount";
+}
+
+td:nth-of-type(5):before {
+  content: "Business insurance discount";
+}
+
+td:nth-of-type(6):before {
+  content: "Facebook ad credit";
+}
+
+td:nth-of-type(7):before {
+  content: "Visitor's Guide listing";
+}
+
+td:nth-of-type(8):before {
+  content: "Premier business listing";
+}
+
+td:nth-of-type(9):before {
+  content: "Chamber approved web badge"
+}
+
+td:nth-of-type(10):before {
+  content: "Monthly luncheon";
+}
+
+td:nth-of-type(11):before {
+  content: "Business launch coach";
+}
 
 }
+
+.titlename {
+  font-weight: bold;
+}
+.board {
+  display: grid;
+  grid-template-areas:
+  "title1 title1"
+  "chair vc"
+  "treas gc"
+  "title2 title2"
+  "mem1 mem2"
+  "mem3 mem4";
+   justify-items: center;
+   gap: .5rem;
+   background-color: #c2a83e;
+}
+
+.title1 {
+  grid-area: title1;
+}
+
+.chair {
+  grid-area: chair;
+}
+
+.vc {
+  grid-area: vc;
+}
+
+.treas {
+  grid-area: treas;
+}
+
+.gc { 
+  grid-area: gc;
+}
+
+.title2 {
+  grid-area: title2;
+}
+
+.mem1 {
+  grid-area: mem1;
+}
+
+.mem2 {
+  grid-area: mem2;
+}
+
+.mem3 {
+  grid-area: mem3;
+}
+
+.mem4 {
+  grid-area: mem4;
+}
+
+.title1, .title2 {
+  background-color: goldenrod;
+  width: 100%;
+}
+.contactinfo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.address {
+  flex: 2 1 0;
+}
+
+.map {
+  flex: 1 1 0;
+}
+form fieldset {
+  margin: 2rem 0;
+  width: 300px;
+  border: 1px solid #243e36;
+  border-radius: 10px;
+  padding: 0.7rem 7%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: antiquewhite;
+}
+
+form legend {
+  color: #36512e;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+}
+
+
+
+
   footer {
       background-color: #c2a83e;
       font-size: .8rem;
       font-weight: bold;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #243e36;
+  }
+
+  footer a:hover {
+    color:#1b98e0;
   }
