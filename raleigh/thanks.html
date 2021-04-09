@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raleigh, North Carolina Chamber of Commerce</title>
+    <meta name="description" content="About the Raleigh Chamber of Commerce, its purpose, how to join and member businesses">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" type="text/css" />
+    <link rel="stylesheet" href="css/medium.css" type="text/css" />
+    <link rel="stylesheet" href="css/large.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+      <figure>
+      <img src="images/acorn.webp" alt="acorn icon" class="icon">
+      <figcaption>City of Oaks</figcaption>
+      </figure>
+      <h1>Raleigh Chamber of Commerce</h1>
+      </div>
+       <img 
+  srcset="
+  images/raleigh-skyline-1600x500.webp 1600w,
+  images/raleigh-skyline-960x300.webp 960w,
+  images/raleigh-skyline-640x360.webp 640w
+  "
+  sizes="100vw"
+  
+  src="images/raleigh-skyline-960x300.webp"
+  alt="Raleigh skyline">
+  <div id="icons">
+  <button onclick="togglemenu()">&#9776;</button> 
+  <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="social"><img src="images/iconmonstr-facebook-6-32.png" alt="facebook icon"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="social"><img src="images/iconmonstr-instagram-13-32.png" alt="instagram icon"></a>
+      </div>
+<nav>
+<ul id="menu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-raleigh.html">Raleigh</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header> 
+  <nav>
+      
+    </nav>
+
+    <main>
+      
+      <p class="thanks">Thanks for your submission. We will be in contact with you shortly.</p>
+      
+      
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 
+      Raleigh Chamber of Commerce </p>
+      <p>8609 Olde Station Drive</p>
+      <p>Raleigh, NC 27615</p>
+      <p>919-876-8475</p>
+      <p>info@raleigh.biz</p>
+      <p>Last modified: <span id="moddate"></span></p>
+      <a href="attributions.html">Attributions</a> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/date.js"></script>
+    <script>WebFont.load({
+        google: {
+          families: [
+             'Cinzel Decorative:wght@700', 'Lora:wght@500'
+          ]
+        }
+      });</script>
+  </body>
+</html>
